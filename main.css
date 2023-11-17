@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&family=Rubik:wght@400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Rubik;
+  background-color: #0E1323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.container{
+  display: flex;
+  width:80%;
+  margin-top: 2.2rem;
+  justify-content: center;
+  align-items: center;
+  border:red solid 6px;
+}
+
+.subContainer{
+  display: flex;
+  gap: 1.664rem;
+}
+
+.biggerProfile{
+  height: 32.375rem; 
+  border-radius: 0.9375rem;
+  background-color: #1C204B;
+}
+
+.profile{
+  height: 22.125rem; 
+  border-radius: 0.9375rem;
+  background-color:  #5747EA;
+  padding: 2.31rem 5.31rem 0 2rem ;
+}
+
+.image1{
+  width: 4.875rem; 
+  display: flex;
+  justify-content: left;
+  border: #FFF solid 3px;
+  border-radius: 40.5rem;
+}
+
+.p1{
+  color: #BBC0FF;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  padding-top: 1.97rem;
+}
+
+.p3{
+  color: #FFF;
+  font-size: 2.5rem;
+  font-weight: 300;
+  width: 8.625rem;
+}
+
+.calendar{
+  color: #7078C9;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding-top: 1.65rem;
+  padding-left: 2rem;
+}
+
+.calendar p:active{
+  cursor: pointer;
+  color: #FFF;
+}
+
+.week{
+  padding: 1.31rem 0 1.31rem 0;
+}
+
+.firstcard{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.biggerWork{
+  position: relative;
+  z-index: -1;
+  height: 2.81rem;
+}
+
+.workbox{
+  border-radius: 0.9375rem;
+  background: #1C204B;
+  height: 12.4375rem;
+  padding: 1.81rem 0 0 1.87rem;
+}
+
+.workContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 11.875rem;
+}
+
+.workDay{
+  color: #FFF;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.workTime{
+  color: #FFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+}
+
+.workWeek{
+  color: #BBC0FF;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+
+/* mobile style */
+@media (min-width:320px) and (max-width:480px){
+  .container{
+    width:95%;
+    border:red solid 6px;
+  }
+  .subContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .biggerProfile{
+    height: 12.6875rem;
+  }
+
+  .profile{
+    height: 8.3125rem;
+    display: flex;
+  }
+
+  .image1{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .p1{
+    margin-left: 1.25rem;
+    margin-top: -2.63rem;
+  }
+
+  .p3{
+    font-size: 1.5rem;
+    width: 10.625rem;
+  }
+
+  .calendar{
+    display: flex;
+  }
+
+  .firstcard{
+    width: 100%;
+  }
+  .card{
+    /* width: 100%; */
+  }
+
+  .workbox{
+    height: 12.4375rem;
+  }
+}
